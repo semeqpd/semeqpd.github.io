@@ -22,7 +22,7 @@ layout: home
 <ul>
 <li><a href="projetos"><b>Projetos</b></a><br></li>
 <li><a href="kanban"><b>Kanban</b></a><br></li>
-<li><a href="timeline"><b>Timeline</b></a><br></li>
+<li><a href="gantt"><b>Gantt</b></a><br></li>
 <li><a href="etapas"><b>Etapas</b></a><br></li>
 <li><a href="horas"><b>Apontamento de Horas</b></a><br></li>
 <li><a href="custos"><b>Apontamento de Custos</b></a><br></li>
