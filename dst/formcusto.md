@@ -1,0 +1,6 @@
+---
+layout: encrypted
+title: "Inserir Apontamento de Custo"
+
+encrypted: 100b6c3ddf8e89775cd7e0f533d3a30b8a01262bbd1ce4680af018e7d3a87a77U2FsdGVkX18PHcxDeMPZeNLkMOgS5gjx/pGCXiQc+Idv8g0oxXcuRlKtgr3/9QSlu+47kMLK+g07Ui1DeMJcG9YFC45ngRMKyc/c19Wel+2uF3RVtQ9EbU+dw7QqvnGRv98ubfpanePiGrRAqUqnykZFb2OiAnuK/UrompPJG5BQ7QE0TSGnoLi0JQfWs/SEHzfHaDAsH7cs/q6qIC9Al3rxuq5O9okyOtf9STvrFyZ/jPC1yw4DDtnn1MyoY9KpYxdNzBSupb2xrayn8EJVafrkGuZHz/2ZsZeNwhAPxTLVgcLGotYON1n5Pk9LTPFwluDlYzv2A0oI8sdBHzyBlA==
+---

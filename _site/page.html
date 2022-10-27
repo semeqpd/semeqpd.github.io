@@ -36,7 +36,7 @@
         </label>
 
         <div class="trigger">
- <!--<a class="page-link" href="/custos.html">Apontamento de Custos</a><a class="page-link" href="/etapas.html">Etapas</a><a class="page-link" href="/formcusto.html">Inserir Apontamento de Custo</a><a class="page-link" href="/formetapa.html">Inserir Etapa</a><a class="page-link" href="/formhora.html">Inserir Apontamento de Horas</a><a class="page-link" href="/dst/formproj.html">Inserir Projeto</a><a class="page-link" href="/formproj.html">Inserir Projeto</a><a class="page-link" href="/formrelat.html">Inserir Relatório Parcial</a><a class="page-link" href="/formtap.html">Inserir TAP</a><a class="page-link" href="/formtep.html">Inserir TEP</a><a class="page-link" href="/gantt.html">Gantt</a><a class="page-link" href="/help.html">Projetos</a><a class="page-link" href="/horas.html">Apontamento de Horas</a><a class="page-link" href="/kanban.html">Kanban</a><a class="page-link" href="/projetos.html">Projetos</a><a class="page-link" href="/relats.html">Relatórios</a><a class="page-link" href="/taps.html">TAPs</a><a class="page-link" href="/teps.html">TEPs</a><a class="page-link" href="/dst/test.html">Teste</a><a class="page-link" href="/timeline.html">Timeline</a>-->
+ <!--<a class="page-link" href="/dst/custos.html">Apontamento de Custos</a><a class="page-link" href="/dst/etapas.html">Etapas</a><a class="page-link" href="/dst/formcusto.html">Inserir Apontamento de Custo</a><a class="page-link" href="/dst/formetapa.html">Inserir Etapa</a><a class="page-link" href="/dst/formhora.html">Inserir Apontamento de Horas</a><a class="page-link" href="/dst/formproj.html">Inserir Projeto</a><a class="page-link" href="/dst/formrelat.html">Inserir Relatório Parcial</a><a class="page-link" href="/dst/formtap.html">Inserir TAP</a><a class="page-link" href="/dst/formtep.html">Inserir TEP</a><a class="page-link" href="/dst/gantt.html">Gantt</a><a class="page-link" href="/dst/help.html">Projetos</a><a class="page-link" href="/dst/horas.html">Apontamento de Horas</a><a class="page-link" href="/dst/kanban.html">Kanban</a><a class="page-link" href="/dst/projetos.html">Projetos</a><a class="page-link" href="/dst/relats.html">Relatórios</a><a class="page-link" href="/dst/taps.html">TAPs</a><a class="page-link" href="/dst/teps.html">TEPs</a><a class="page-link" href="/dst/test.html">Teste</a><a class="page-link" href="/dst/timeline.html">Timeline</a>-->
           <a href="/">Home</a> - 
           <a href="/help">Help</a>
           <!-- <a href="/about">Sobre</a> --> 
@@ -62,8 +62,36 @@
   </header>
 
   <div class="post-content">
-    <iframe class="airtable-embed" src="https://airtable.com/embed/shrdMOT6sJPQhcaid?backgroundColor=cyan&amp;viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+    <div id="encrypted_content">
+  <form id="encrypt_form" action="#" method="post">
+    <input id="encrypt_password"
+           type="password"
+           name="password"
+           placeholder="insert password"
+           autofocus />
 
+    <input type="submit" value="Unlock"/>
+  </form>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+  <script>
+    document.getElementById('encrypt_form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var passphrase = document.getElementById('encrypt_password').value,
+          encryptedMsg = '0d9eaaff3ff338a0cd25ed47cc9212b256d5abaea6ef8e2eab7d11b2cb0cba07U2FsdGVkX1+xN9cuWoM80tGeMqYhKFPd2Jl5tBihwBmIZAHGL6gC5mUclP+TYnsny1StqZrWC6iD2ugWGfz2WTpzxOUBFNfFzPIuzvfnDOehHYZM9TOLyIP0spAzFb6B5Wacpx/4OgSKfmkQ8BnK3uQWRJ+yT0JtnoyiiQmsiVHq6HMq0ByECFt5WTEL9luZCPlxJJuFo6KiVuKfw3D1durAotoTahulYwfGt5OEN5CeWmRyS25bEO222PNYvo1XDlxZAGM6UattDQZa7SA7W1tcBlfLuxK44qxptziJmpCctocVI1Qd02E5k2igRUoof3wy3EU+HNvIOzZZUVgWOOSqZcK21F9rKdUhBKndogc=',
+          encryptedHMAC = encryptedMsg.substring(0, 64),
+          encryptedHTML = encryptedMsg.substring(64),
+          decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
+
+      if (decryptedHMAC !== encryptedHMAC) {
+        alert('Bad passphrase!');
+        return;
+      }
+
+      var plainHTML = CryptoJS.AES.decrypt(encryptedHTML, passphrase).toString(CryptoJS.enc.Utf8);
+      document.getElementById('encrypted_content').innerHTML = plainHTML;
+    });
+  </script>
+</div>
   </div>
 
 </article>
