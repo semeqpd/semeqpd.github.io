@@ -1,0 +1,6 @@
+---
+layout: encrypted
+title: "Inserir Projeto"
+
+encrypted: 63e1521aab372ac68dade2d8e01b92ae63492752185ead914f72b4bbc53d8b1eU2FsdGVkX1/vuPwPug/AYnAH8seL5NWfezwrwyxy6yTJ11Q8pTQ7rHEeSC2G+4IwfRAWG3dLs9NoKgGiJQz0VhKcV/mcyxRrgr/4Kxzxc9hSCT01I+kcWEpfnpIY3IECLc2nPo8nGhoE0YWMs77no0Y9NXtJ0qAp/GwAa9NQxjNaPiM6khvxWw/p79XGSf9XqgUDwsQT+dmdGoB08MuvPmogJyJBNOnDsdiJsK6tp/abDEgB98wmKGeAHnguYTNCWsRfCMMjcjSqxxBMc52LwAiPUrkpaozkoJVx9IblY/Ag7l6iy4SszqRmPQhTnIF3puwG5iENmqVhnMBAp63yjA==
+---

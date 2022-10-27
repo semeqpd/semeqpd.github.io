@@ -36,3 +36,7 @@ layout: home
 <li><a href="teps"><b>TEPs</b></a><br></li>
 </ul>
 
+<h2>Senha</h2>
+
+<a href="/dst/test.html"><b>Teste</b></a>
+

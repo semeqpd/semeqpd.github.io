@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Apontamento de Horas | Pesquisa e Desenvolvimento</title>
+<title>Inserir Projeto | Pesquisa e Desenvolvimento</title>
 <meta name="generator" content="Jekyll v3.9.2" />
-<meta property="og:title" content="Apontamento de Horas" />
+<meta property="og:title" content="Inserir Projeto" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="SEMEQ Projetos" />
 <meta property="og:description" content="SEMEQ Projetos" />
-<link rel="canonical" href="http://localhost:4000/horas.html" />
-<meta property="og:url" content="http://localhost:4000/horas.html" />
+<link rel="canonical" href="http://localhost:4000/dst/formproj.html" />
+<meta property="og:url" content="http://localhost:4000/dst/formproj.html" />
 <meta property="og:site_name" content="Pesquisa e Desenvolvimento" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Apontamento de Horas" />
+<meta property="twitter:title" content="Inserir Projeto" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"SEMEQ Projetos","headline":"Apontamento de Horas","url":"http://localhost:4000/horas.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"SEMEQ Projetos","headline":"Inserir Projeto","url":"http://localhost:4000/dst/formproj.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Pesquisa e Desenvolvimento" /></head>
 <body><header class="site-header" role="banner">
@@ -53,12 +53,40 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Apontamento de Horas</h1>
+    <h1 class="post-title">Inserir Projeto</h1>
   </header>
 
   <div class="post-content">
-    <iframe class="airtable-embed" src="https://airtable.com/embed/shrR8SIyaVIqSwfJV?backgroundColor=cyan&amp;layout=card&amp;viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+    <div id="encrypted_content">
+  <form id="encrypt_form" action="#" method="post">
+    <input id="encrypt_password"
+           type="password"
+           name="password"
+           placeholder="insert password"
+           autofocus />
 
+    <input type="submit" value="Unlock"/>
+  </form>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+  <script>
+    document.getElementById('encrypt_form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var passphrase = document.getElementById('encrypt_password').value,
+          encryptedMsg = '63e1521aab372ac68dade2d8e01b92ae63492752185ead914f72b4bbc53d8b1eU2FsdGVkX1/vuPwPug/AYnAH8seL5NWfezwrwyxy6yTJ11Q8pTQ7rHEeSC2G+4IwfRAWG3dLs9NoKgGiJQz0VhKcV/mcyxRrgr/4Kxzxc9hSCT01I+kcWEpfnpIY3IECLc2nPo8nGhoE0YWMs77no0Y9NXtJ0qAp/GwAa9NQxjNaPiM6khvxWw/p79XGSf9XqgUDwsQT+dmdGoB08MuvPmogJyJBNOnDsdiJsK6tp/abDEgB98wmKGeAHnguYTNCWsRfCMMjcjSqxxBMc52LwAiPUrkpaozkoJVx9IblY/Ag7l6iy4SszqRmPQhTnIF3puwG5iENmqVhnMBAp63yjA==',
+          encryptedHMAC = encryptedMsg.substring(0, 64),
+          encryptedHTML = encryptedMsg.substring(64),
+          decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
+
+      if (decryptedHMAC !== encryptedHMAC) {
+        alert('Bad passphrase!');
+        return;
+      }
+
+      var plainHTML = CryptoJS.AES.decrypt(encryptedHTML, passphrase).toString(CryptoJS.enc.Utf8);
+      document.getElementById('encrypted_content').innerHTML = plainHTML;
+    });
+  </script>
+</div>
   </div>
 
 </article>
