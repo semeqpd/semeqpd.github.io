@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Kanban | Pesquisa e Desenvolvimento</title>
+<title>Projetos | Pesquisa e Desenvolvimento</title>
 <meta name="generator" content="Jekyll v3.9.2" />
-<meta property="og:title" content="Kanban" />
+<meta property="og:title" content="Projetos" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="SEMEQ Projetos" />
 <meta property="og:description" content="SEMEQ Projetos" />
-<link rel="canonical" href="http://localhost:4000/dst/kanban.html" />
-<meta property="og:url" content="http://localhost:4000/dst/kanban.html" />
+<link rel="canonical" href="http://localhost:4000/help.html" />
+<meta property="og:url" content="http://localhost:4000/help.html" />
 <meta property="og:site_name" content="Pesquisa e Desenvolvimento" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Kanban" />
+<meta property="twitter:title" content="Projetos" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"SEMEQ Projetos","headline":"Kanban","url":"http://localhost:4000/dst/kanban.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"SEMEQ Projetos","headline":"Projetos","url":"http://localhost:4000/help.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Pesquisa e Desenvolvimento" /></head>
 <body><header class="site-header" role="banner">
@@ -54,40 +54,14 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Kanban</h1>
+    <h1 class="post-title">Projetos</h1>
   </header>
 
   <div class="post-content">
-    <div id="encrypted_content">
-  <form id="encrypt_form" action="#" method="post">
-    <input id="encrypt_password"
-           type="password"
-           name="password"
-           placeholder="insert password"
-           autofocus />
+    <p><a href="projetosv2.pdf" target="_blank"><img width="1024" src="images/projetosv2.png" /></a></p>
 
-    <input type="submit" value="Unlock"/>
-  </form>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
-  <script>
-    document.getElementById('encrypt_form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      var passphrase = document.getElementById('encrypt_password').value,
-          encryptedMsg = '82d3143b10dcd4f2dba9498f1a74790b9a8c43b992e056e6c68e5bd95fbe3efcU2FsdGVkX18WcCX4oSHnj090e4lBTfESt91GTpXGmPrwzrFtqv5RGOKM4hkmYEdAOCVBWL7OggVKKT0Ke/ZPnone0zaYRjTIyRDYcUlsgrbUYNYjJAt5+uzEhpje0xO9G7Rriz6mgwm3lQ5pJMAzcEG+OdKr8V0lghe1C70pIys5sCpJWFAmtwyxY+2FwNBSxo40TORrxvHZsGZXFoMvuNOC89xfhFSOGC2ptanGl00SkSv9y88qNk+Q6LaB/WsZrB+rXhnvuZqnlOfD3yDNCCJE6lkeq8AdzlgpjO8chivb6um0x94oiLSK9AGtrUuaajvMei5GA675lABbZ/6fgy1uAsoUoMkEwRPN+5EqAG0=',
-          encryptedHMAC = encryptedMsg.substring(0, 64),
-          encryptedHTML = encryptedMsg.substring(64),
-          decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
+<p><a href="projetosv2.bpmn" target="_blank">Arquivo do processo (BPMN)</a><br />Abrir em <a href="https://bpmn.io/" target="_blank">https://bpmn.io/</a></p>
 
-      if (decryptedHMAC !== encryptedHMAC) {
-        alert('Bad passphrase!');
-        return;
-      }
-
-      var plainHTML = CryptoJS.AES.decrypt(encryptedHTML, passphrase).toString(CryptoJS.enc.Utf8);
-      document.getElementById('encrypted_content').innerHTML = plainHTML;
-    });
-  </script>
-</div>
   </div>
 
 </article>

@@ -20,7 +20,8 @@
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Pesquisa e Desenvolvimento" /></head>
 <body><header class="site-header" role="banner">
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
   <div class="wrapper"><table><tr><td width="180px">
       <a href="/" class="site-avatar"><img src="/images/semeq.png" width="160px"/></a>
 
@@ -36,7 +37,7 @@
         </label>
 
         <div class="trigger">
- <!--<a class="page-link" href="/dst/custos.html">Apontamento de Custos</a><a class="page-link" href="/dst/etapas.html">Etapas</a><a class="page-link" href="/dst/formcusto.html">Inserir Apontamento de Custo</a><a class="page-link" href="/dst/formetapa.html">Inserir Etapa</a><a class="page-link" href="/dst/formhora.html">Inserir Apontamento de Horas</a><a class="page-link" href="/dst/formproj.html">Inserir Projeto</a><a class="page-link" href="/dst/formrelat.html">Inserir Relatório Parcial</a><a class="page-link" href="/dst/formtap.html">Inserir TAP</a><a class="page-link" href="/dst/formtep.html">Inserir TEP</a><a class="page-link" href="/dst/gantt.html">Gantt</a><a class="page-link" href="/dst/help.html">Projetos</a><a class="page-link" href="/dst/horas.html">Apontamento de Horas</a><a class="page-link" href="/dst/kanban.html">Kanban</a><a class="page-link" href="/dst/projetos.html">Projetos</a><a class="page-link" href="/dst/relats.html">Relatórios</a><a class="page-link" href="/dst/taps.html">TAPs</a><a class="page-link" href="/dst/teps.html">TEPs</a><a class="page-link" href="/dst/test.html">Teste</a><a class="page-link" href="/dst/timeline.html">Timeline</a>-->
+ <!--<a class="page-link" href="/dst/custos.html">Apontamento de Custos</a><a class="page-link" href="/dst/etapas.html">Etapas</a><a class="page-link" href="/dst/formcusto.html">Inserir Apontamento de Custo</a><a class="page-link" href="/dst/formetapa.html">Inserir Etapa</a><a class="page-link" href="/dst/formhora.html">Inserir Apontamento de Horas</a><a class="page-link" href="/dst/formproj.html">Inserir Projeto</a><a class="page-link" href="/dst/formrelat.html">Inserir Relatório Parcial</a><a class="page-link" href="/dst/formtap.html">Inserir TAP</a><a class="page-link" href="/dst/formtep.html">Inserir TEP</a><a class="page-link" href="/dst/gantt.html">Gantt</a><a class="page-link" href="/dst/help.html">Projetos</a><a class="page-link" href="/help.html">Projetos</a><a class="page-link" href="/dst/horas.html">Apontamento de Horas</a><a class="page-link" href="/dst/kanban.html">Kanban</a><a class="page-link" href="/dst/projetos.html">Projetos</a><a class="page-link" href="/dst/relats.html">Relatórios</a><a class="page-link" href="/dst/taps.html">TAPs</a><a class="page-link" href="/dst/teps.html">TEPs</a><a class="page-link" href="/dst/test.html">Teste</a><a class="page-link" href="/dst/timeline.html">Timeline</a>-->
           <a href="/">Home</a> - 
           <a href="/help">Help</a>
           <!-- <a href="/about">Sobre</a> --> 
@@ -72,7 +73,7 @@
     document.getElementById('encrypt_form').addEventListener('submit', function(e) {
       e.preventDefault();
       var passphrase = document.getElementById('encrypt_password').value,
-          encryptedMsg = '970a231f98a6f2d06abfe82bc9d6c5f751d25d1a71243428f8d68999b03b8a22U2FsdGVkX1+EYiiEPqdqsmPjAHRR7EhsQqZe83UFutNPB8AJwV779V2z7rqzhkEF9UBY/84I8iHKnWT7HgTEotRdnO5NpA9j/22/ef7s3YTR1NNEEgOrW9ZigTRJArYurtHVMWctx7tnGK3Rv/40WhsLs0O0O9p3jUu++Yh3rXCC15Qh6lgCKMGN4F10ZlrnsvmVaA+kxD4hh3AaPgnY1kbW4Uw3wzMYmNZxdrd1RbwaSB+0zjBvHfBr7KAgKGVjw3RnNERq9yMgY02SP5eDtGupmNe/qeWFZXHObZrHK0xFQGStPANbYHTTZtcHXmU3G+rVc+p7XVz6Av2+7s+By5JTb3KyKaYq5QzlBhCn5SKU4UKBKSzCoDHyHx78HFRC',
+          encryptedMsg = '2e920e0e63fcb848d462338c7cb21386e2c19a0a6546c2b32eb358d69e6c8558U2FsdGVkX18q9lKi9+QZizg/zEBq7DCtEq5w8Arhol9ZtCTQXPHkQ13FJgwbjaMBXAgMZTOVrXwguNJXVnSDnKKxOloEviYPQTcnBQ3v8q8ZLrxvCc0gfXNyPUGIENg5YOEcFupXaLMVU7ElpwI0tCSl6ByZDppZScDfyVfJgqvotFL81iRqveJIRJxEFQdRtDxV+6Pzu+m2RhGFbNkfi/uCZHca37IeJXeJag4J9/xP3WzcwN9VCtz0Svsy//jsFc1fwrtjDwD5eP+sSLO7aXuLGxjYiXKysaD0dL7bx1IMJTukVtiPch60FrocrWMOVU/myTYFbpsy9L80h5itpABTe5vVNX2TZgErOBeq2I1AjcroyP8Gu4nCZbQrZzKw',
           encryptedHMAC = encryptedMsg.substring(0, 64),
           encryptedHTML = encryptedMsg.substring(64),
           decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
